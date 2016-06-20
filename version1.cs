@@ -22,7 +22,7 @@ public class version1 : MonoBehaviour {
 	
 	}
 	
-	// Update is called once per frame1
+	// Update is called once per frame
 	void Update () {
 		score_Text.text = "" +  score;
 		clock_Text.text = "" + Mathf.RoundToInt (clock);
