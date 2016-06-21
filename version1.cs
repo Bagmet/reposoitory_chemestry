@@ -15,7 +15,7 @@ public class version1 : MonoBehaviour {
 		clock_to_next = 0.5f;
 		score = 0;
 		target_finish = "not";
-		random = Random.Range(1, 21);
+		random = Random.Range(1, 25);
 		random2 = Random.Range (1, 5);
 		Debug.Log (random);
 		clock = 30;
@@ -23,7 +23,7 @@ public class version1 : MonoBehaviour {
 	}
 	
 	// Уже имеется : Кислород (О2), Азот (N2), Водород (H2), Алюминий (Al), Хлор (Cl), Олово (Sn), Франций (Fr), Никель (Ni), Марганец (Mn), Ртуть (Hg), Гелий (He), Рубидий (Rb), Цезий (Cs), Криптон (Kr)
-    //Также: Натрий (Na), Магний (Mg), Железо (Fe), Медь (Cu), Серебро (Ag), Йод (I2)
+	//Также: Натрий (Na), Магний (Mg), Железо (Fe), Медь (Cu), Серебро (Ag), Йод (I2), Свинец(Pb), Барий(Ba), Вольфрам(W), Кальций(Ca)
 	void Update () {
 		score_Text.text = "" +  score;
 		clock_Text.text = "" + Mathf.RoundToInt (clock);
@@ -728,11 +728,163 @@ public class version1 : MonoBehaviour {
                 card_text3 = "I";
                 card_text4 = "2";
             }
-            card1.text = card_text1;
+			card1.text = card_text1;
             card2.text = card_text2;
             card3.text = card_text3;
             card4.text = card_text4;
-        }
+		}
+
+		if (random == 21)
+		{
+			target_finish = "Pb";
+			target.text = "Свинец";
+			if (random2 == 1)
+			{
+				card_text1 = "P";
+				card_text2 = "I";
+				card_text3 = "2";
+				card_text4 = "b";
+			}
+			if (random2 == 2)
+			{
+				card_text1 = "Pb";
+				card_text2 = "d";
+				card_text3 = "I";
+				card_text4 = "P";
+			}
+			if (random2 == 3)
+			{
+				card_text1 = "P";
+				card_text2 = "Mg";
+				card_text3 = "2";
+				card_text4 = "b";
+			}
+			if (random2 == 4)
+			{
+				card_text1 = "c";
+				card_text2 = "3";
+				card_text3 = "P";
+				card_text4 = "Pb";
+			}
+			card1.text = card_text1;
+			card2.text = card_text2;
+			card3.text = card_text3;
+			card4.text = card_text4;
+		}
+
+		if (random == 22)
+		{
+			target_finish = "Ba";
+			target.text = "Барий";
+			if (random2 == 1)
+			{
+				card_text1 = "B";
+				card_text2 = "a";
+				card_text3 = "r";
+				card_text4 = "i";
+			}
+			if (random2 == 2)
+			{
+				card_text1 = "Ba";
+				card_text2 = "r";
+				card_text3 = "B";
+				card_text4 = "2";
+			}
+			if (random2 == 3)
+			{
+				card_text1 = "I";
+				card_text2 = "Mg";
+				card_text3 = "2";
+				card_text4 = "Ba";
+			}
+			if (random2 == 4)
+			{
+				card_text1 = "B";
+				card_text2 = "3";
+				card_text3 = "a";
+				card_text4 = "2";
+			}
+			card1.text = card_text1;
+			card2.text = card_text2;
+			card3.text = card_text3;
+			card4.text = card_text4;
+		}
+
+		if (random == 23)
+		{
+			target_finish = "W";
+			target.text = "Вольфрам";
+			if (random2 == 1)
+			{
+				card_text1 = "Mg";
+				card_text2 = "W";
+				card_text3 = "e";
+				card_text4 = "Wf";
+			}
+			if (random2 == 2)
+			{
+				card_text1 = "W";
+				card_text2 = "Wo";
+				card_text3 = "3";
+				card_text4 = "2";
+			}
+			if (random2 == 3)
+			{
+				card_text1 = "I";
+				card_text2 = "W";
+				card_text3 = "2";
+				card_text4 = "V";
+			}
+			if (random2 == 4)
+			{
+				card_text1 = "W";
+				card_text2 = "3";
+				card_text3 = "I";
+				card_text4 = "2";
+			}
+			card1.text = card_text1;
+			card2.text = card_text2;
+			card3.text = card_text3;
+			card4.text = card_text4;
+		}
+
+		if (random == 24)
+		{
+			target_finish = "Ca";
+			target.text = "Кальций";
+			if (random2 == 1)
+			{
+				card_text1 = "a";
+				card_text2 = "I";
+				card_text3 = "2";
+				card_text4 = "C";
+			}
+			if (random2 == 2)
+			{
+				card_text1 = "a";
+				card_text2 = "K";
+				card_text3 = "Ca";
+				card_text4 = "2";
+			}
+			if (random2 == 3)
+			{
+				card_text1 = "C";
+				card_text2 = "Mg";
+				card_text3 = "2";
+				card_text4 = "a";
+			}
+			if (random2 == 4)
+			{
+				card_text1 = "c";
+				card_text2 = "C";
+				card_text3 = "a";
+				card_text4 = "2";
+			}
+			card1.text = card_text1;
+			card2.text = card_text2;
+			card3.text = card_text3;
+			card4.text = card_text4;
+		}
         if (clock <= 0) {
 			PlayerPrefs.SetInt ("score", score);
 			if (PlayerPrefs.GetInt ("hight") < PlayerPrefs.GetInt ("score")) {
