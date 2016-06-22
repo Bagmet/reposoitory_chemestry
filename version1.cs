@@ -210,16 +210,16 @@ public class version1 : MonoBehaviour {
 		/// 
 		if (random == 6)
         {
-            target_finish = "SN";
+            target_finish = "Sn";
             target.text = "Олово";
             if (random2 == 1) {
 				card_text1 = "N";
 				card_text2 = "2";
 				card_text3 = "S";
-				card_text4 = "N";
+				card_text4 = "n";
 			}
 			if (random2 == 2) {
-				card_text1 = "N";
+				card_text1 = "n";
 				card_text2 = "S";
 				card_text3 = "S2";
 				card_text4 = "C";
@@ -241,9 +241,8 @@ public class version1 : MonoBehaviour {
             card3.text = card_text3;
             card4.text = card_text4;
         }
-		/////////
 		if (random == 7)
-        {
+		{
             target_finish = "Fr";
             target.text = "Франций";
             if (random2 == 1) {
