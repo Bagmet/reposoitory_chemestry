@@ -65,11 +65,11 @@ public class version1 : MonoBehaviour {
 
 			clock_to_next -= Time.deltaTime;
 			if (clock_to_next <= 0) {
-				random = Random.Range(1, 25);
+				random = Random.Range(1, 15);
 				random2 = Random.Range (1, 5);
 				clock_to_next = 0.5f;
 				Texty.text = "";
-				score++;
+				score++; //Здесь изменил
 			}
 		}
 		if (random == 2) {
